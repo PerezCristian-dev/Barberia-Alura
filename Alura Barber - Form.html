@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>BarberShop|Form</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/style-form.css" />
+</head>
+<body>
+    <header>
+       <div class="Headcontainer">
+            <h1><img class ="barberLogo" alt ="Logo" src="img/baberLogo.png" /></h1>
+            <nav>
+                <ul>
+                    <li><a href="Barberia Alura.html">Home</a></li>
+                    <li><a href="Alura Barber - Productos.html">Products</a></li>
+                    <li><a href="Alura Barber - Contact Us.html">Contact us</a></li>
+                    <li><a href="Barberia About us.html">About us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>    
+       <form>
+            <label for="nombre">Nombre y Apellido</label>
+            <input type="text" id="nombre"  class="padron" required>
+
+            <label for="correo">Correo Electronico</label>
+            <input type="email" id="correo"placeholder="emai@domian.com" class="padron" required>
+
+            <label for="telefono">Telefono</label>
+            <input type="tel" id="telefono"placeholder="(XXX) XXX XXXX" class="padron" required>
+
+            <label for="mensaje">Mensaje</label>
+            <textarea cols= "70" rows="10" id="mensaje" required></textarea>
+
+            <fieldset>
+                <legend>Como le gustaria que lo contactemos?</legend>
+                <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+                <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono" >Telefono</label>
+                <label for="radio-whatsapp"><input type="radio" name="contacto" value="email" id="radio-whatsapp" checked>Whatsapp</label>  
+            </fieldset>
+
+           
+           <fieldset> 
+                <legend>En cual horario prefiere ser atendio</legend>
+                <select>
+                    <option>Mañana</option>
+                    <option>Tarde</option>
+                    <option>Noche</option>
+                </select>
+            </fieldset>
+
+            <label class="checkbox"><input type="checkbox" checked>Le gustaria recibir novedades de la Barberia Alura?</label>
+
+            <input type="submit" value="Enviar Formulario" class="enviar">
+        </form> 
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+            <tbody>  
+                <tr>
+                    <td>Lunes</td>
+                    <td>08h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Miercoles</td>
+                    <td>08h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Viernes</td>
+                    <td>08h ~ 20h</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </main>
+    <footer>
+        <h1><img class ="barberLogo" alt ="Logo" src="img/logo-blanco.png" /></h1>
+        &copy;<em id="date">2022</em> by Christheadvenger <br/><em>Gracias a Alura LATAM|ONE oracle</em>
+        <br />
+        <a href="https://github.com/PerezCristian-dev/PerezCristian" target="_blank">
+            <img alt="Github Logo" src="img/Github Logo.png" height="30">
+        </a>
+        <a href="https://www.instagram.com/christheadvenger/?hl=es" target="_blank">
+            <img alt="Instagram Logo" src="img/instagram logo.png" height="30">
+        </a>
+        <a href="Christheadvenger#1347" target="_blank">
+            <img alt="Discord Logo" src="img/discord logo.png" height="30">
+        </a>
+    </footer>
+</body>
+</html>
